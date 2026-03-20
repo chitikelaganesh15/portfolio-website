@@ -24,7 +24,15 @@
 <p><strong>Education:</strong> [B.sc computers]</p>
 <p><strong>Email:</strong> [chitikelaganesh15@gamil.com]</p> 
   <br>
-   <a href="Ganesh-Resume.pdf" class="btn">View Resume</a>
+  <button onclick="showResume()">View Resume</button>
+
+<div id="resumeSection"></div>
+  <script>
+function showResume() {
+  document.getElementById("resumeSection").innerHTML =
+    '<iframe src="Ganesh-Resume.pdf" width="100%" height="600px"></iframe>';
+}
+</script>
   
 
 </body>
